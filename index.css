@@ -7,25 +7,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.js-clock {
-  height: 200px;
-  margin-bottom: 50px;
-}
-.js-title {
-  font-size: 150px;
-}
+
 .greetings {
   font-size: 50px;
 }
-.js-toDoForm {
+.js-toDoForm input {
   height: 50px;
   width: 400px;
-  display: flex;
-  align-items: center;
-}
-.js-toDoForm input {
-  height: 30px;
-  width: 400px;
+  font-size: 50px;
+  text-align: center;
 }
 .js-toDoList {
   width: 400px;
@@ -44,6 +34,8 @@ body {
 
 .showing {
   display: block;
+  height: 60px;
+  font-size: 60px;
 }
 
 @keyframes fadeIn {
@@ -65,5 +57,58 @@ body {
   animation: fadeIn 0.5s linear;
 }
 .js-weather {
+  text-align: right;
   font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.js-clock {
+  height: 300px;
+  font-size: 100px;
+  text-align: center;
+}
+.form input {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70px;
+  width: 500px;
+}
+.form {
+  margin-bottom: 100px;
+}
+.todoForm input {
+  width: 350px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+input::placeholder {
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ul {
+  font-size: 30px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+button {
+  background: none;
+  color: white;
+  font-size: 20px;
+  border: none;
 }
